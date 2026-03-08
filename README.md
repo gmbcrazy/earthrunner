@@ -56,10 +56,10 @@ Smart Audio Guide
 
 ## Technologies
 
-- Unreal Engine
-- Web-based control interface
-- Real-time navigation synchronization
+- Unreal Engine, Cesium, Google Photorealistic 3D Tiles
+- Real-time close-loop navigation synchronization
 - AI-generated narration
+- Web-based control interface
 - Map-based location selection
 - Geographic data sources
 
