@@ -2,78 +2,41 @@
 
 Run anywhere on Earth from a treadmill.
 
-EarthRunner is an experimental system that combines treadmill running, real-world location selection, 3D virtual environments, and a smart AI audio guide to create an immersive running experience.
+EarthRunner is an experimental system that combines treadmill movement, real-world location selection, immersive 3D environments, and an AI audio guide to create an interactive running experience.
 
 ---
 
 ## Concept
 
-Traditional treadmill exercise disconnects runners from the outside world.
-EarthRunner transforms treadmill running into an interactive exploration of the planet.
+Traditional treadmill exercise can feel disconnected from the outside world.  
+EarthRunner transforms treadmill running into an interactive exploration of real-world places.
 
 While running, users can:
 - explore real cities and landscapes
 - control navigation through streets
-- see their position on a live map
-- hear intelligent audio narration about nearby landmarks
+- view their position on a live map
+- hear audio narration about nearby landmarks
 
 ---
 
 ## Core Features
 
-🌍 Run anywhere on Earth
-Select any location and run through a corresponding 3D environment.
-
-🏃 Treadmill-driven movement
-Your physical running speed drives movement in the virtual world.
-
-🧭 Integrated navigation interface
-A web-based interface allows users to control direction while viewing their real-time location on an interactive map.
-
-🗺 Real-time map feedback
-The runner's position and direction are displayed live during the run.
-
-🎧 Smart AI Audio Guide
-An intelligent system describes nearby landmarks and points of interest during the run.
-
----
-
-## System Overview
-
-```
-Treadmill
-  ↓
-Computer
-  ↓
-Unreal Engine 3D Environment
-  ↑
-Web Navigation Interface (map + direction control)
-  ↓
-Smart Audio Guide
-```
-
----
-
-## Technologies
-
-- Unreal Engine + Cesium for real-world 3D environments
-- Google Photorealistic 3D Tiles for global city rendering
-- Real-time closed-loop navigation synchronization
-- AI-generated audio narration
-- Web-based navigation and control interface
-- Map-based location selection
-- Geographic and POI data sources
+- Run through real-world locations in immersive 3D environments
+- Treadmill-driven movement
+- Web-based navigation and direction control
+- Real-time map feedback
+- AI-generated point-of-interest audio guide
 
 ---
 
 ## Current Capabilities
 
-The prototype currently supports:
+The current prototype supports:
 - selecting locations from a map
-- navigation control
-- real-time map feedback
-- immersive 3D running environment
-- automatic audio description generation for nearby places
+- navigation control during movement
+- live map-based position feedback
+- immersive 3D running environments
+- automatic audio description for nearby places
 
 ---
 
@@ -97,9 +60,3 @@ https://earthrunner.org
 ## Author
 
 Lu Zhang
-
----
-
-## License
-
-MIT License
