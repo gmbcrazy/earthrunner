@@ -66,22 +66,8 @@
 
     .hero {
       position: relative;
-      padding: 96px 0 40px;
+      padding: 92px 0 26px;
       text-align: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 16px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, 0.03);
-      color: rgba(245, 247, 251, 0.7);
-      font-size: 13px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
     }
 
     h1 {
@@ -101,9 +87,9 @@
 
     .subline {
       width: min(660px, 100%);
-      margin: 18px auto 0;
+      margin: 16px auto 0;
       font-size: 1rem;
-      line-height: 1.75;
+      line-height: 1.7;
       color: rgba(245, 247, 251, 0.58);
     }
 
@@ -112,7 +98,7 @@
       justify-content: center;
       gap: 14px;
       flex-wrap: wrap;
-      margin-top: 34px;
+      margin-top: 28px;
     }
 
     .button {
@@ -144,7 +130,7 @@
     }
 
     .demo {
-      margin: 34px auto 0;
+      margin: 26px auto 0;
       padding: 18px;
       border-radius: 30px;
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -169,23 +155,53 @@
       border: 0;
     }
 
+    .meta {
+      padding: 14px 0 8px;
+      text-align: center;
+    }
+
+    .contact {
+      display: inline-block;
+      color: rgba(245, 247, 251, 0.64);
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    .contact a {
+      color: var(--text);
+    }
+
+    .details {
+      padding: 12px 0 24px;
+    }
+
+    .details-shell {
+      width: min(100%, 840px);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .details-copy {
+      margin: 0 auto 18px;
+      color: rgba(245, 247, 251, 0.64);
+      font-size: 0.98rem;
+      line-height: 1.8;
+    }
+
     .features {
-      padding: 30px 0 24px;
+      padding: 0;
     }
 
     .feature-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 14px;
-      padding: 18px;
+      padding: 0;
       border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, 0.04);
-      backdrop-filter: blur(12px);
     }
 
     .feature {
-      padding: 20px;
+      padding: 18px;
       border-radius: 18px;
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid rgba(255, 255, 255, 0.06);
@@ -205,7 +221,7 @@
     }
 
     footer {
-      padding: 14px 0 48px;
+      padding: 8px 0 48px;
       text-align: center;
       color: rgba(245, 247, 251, 0.56);
       font-size: 0.95rem;
@@ -222,7 +238,7 @@
       }
 
       .demo {
-        margin-top: 28px;
+        margin-top: 24px;
         padding: 12px;
       }
 
@@ -235,18 +251,12 @@
 <body>
   <main class="shell">
     <section class="hero">
-      <div class="eyebrow">EarthRunner Demo</div>
       <h1>EarthRunner</h1>
       <p class="tagline">Run anywhere on Earth from a treadmill</p>
       <p class="subline">Interactive navigation through real places</p>
-      <p class="subline">
-        EarthRunner is an experimental immersive running system that transforms treadmill
-        exercise into a journey through real cities, landmarks, and landscapes.
-      </p>
 
       <div class="actions">
         <a class="button primary" href="#demo">Watch Demo</a>
-        <a class="button secondary" href="https://github.com/gmbcrazy/earthrunner">View on GitHub</a>
       </div>
 
       <section id="demo" class="demo">
@@ -260,6 +270,21 @@
           ></iframe>
         </div>
       </section>
+    </section>
+
+    <section class="meta" aria-label="Contact">
+      <div class="contact">
+        Contact: <a href="mailto:contact@earthrunner.org">contact@earthrunner.org</a>
+      </div>
+    </section>
+
+    <section class="details" aria-label="Project details">
+      <div class="details-shell">
+        <p class="details-copy">
+          EarthRunner is an experimental immersive running system that transforms treadmill
+          exercise into a journey through real cities, landmarks, and landscapes.
+        </p>
+      </div>
     </section>
 
     <section class="features" aria-label="Features">
@@ -281,8 +306,6 @@
 
     <footer>
       Built independently as a personal project using Unreal Engine and Cesium.
-      <br />
-      <a href="https://earthrunner.org">earthrunner.org</a>
     </footer>
   </main>
 </body>
