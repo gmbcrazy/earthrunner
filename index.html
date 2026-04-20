@@ -120,19 +120,24 @@
     }
 
     .meta {
-      padding: 14px 0 8px;
-      text-align: center;
+      padding: 10px 0 8px;
     }
 
     .contact {
       display: inline-block;
       color: rgba(245, 247, 251, 0.64);
-      font-size: 0.96rem;
+      font-size: 1.04rem;
       line-height: 1.7;
     }
 
     .contact a {
       color: var(--text);
+    }
+
+    .credit-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8px;
     }
 
     .details {
@@ -231,10 +236,10 @@
     }
 
     .music-credit {
-      margin-top: 10px;
       font-size: 0.84rem;
       line-height: 1.7;
       color: rgba(245, 247, 251, 0.42);
+      text-align: right;
     }
 
     .music-credit a {
@@ -258,6 +263,14 @@
       .applications-list {
         grid-template-columns: 1fr;
       }
+
+      .credit-row {
+        justify-content: center;
+      }
+
+      .music-credit {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -279,10 +292,19 @@
           ></iframe>
         </div>
       </section>
+
+      <div class="credit-row">
+        <div class="music-credit">
+          Music by
+          <a href="https://pixabay.com/users/jeremusic70-25199461/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=223554">Jeremusic70</a>
+          from
+          <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=223554">Pixabay</a>
+        </div>
+      </div>
     </section>
 
     <section class="meta" aria-label="Contact">
-      <div class="contact">
+      <div class="contact" style="text-align: center; width: 100%;">
         Contact: <a href="mailto:contact@earthrunner.org">contact@earthrunner.org</a>
       </div>
     </section>
@@ -325,12 +347,6 @@
 
     <footer>
       Built independently as a personal project using Unreal Engine and Cesium.
-      <div class="music-credit">
-        Music by
-        <a href="https://pixabay.com/users/jeremusic70-25199461/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=223554">Jeremusic70</a>
-        from
-        <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=223554">Pixabay</a>
-      </div>
     </footer>
   </main>
 </body>
