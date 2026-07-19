@@ -1,0 +1,9 @@
+.DS_Store
+images/.DS_Store
+
+# Private source screenshots. Public pages use sanitized copies in images/support/.
+images/IMG_*.PNG
+images/Screenshot*PM.png
+
+# Editable artwork stays local; the website publishes optimized WebP assets.
+images/support/*.ai
