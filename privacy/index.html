@@ -11,22 +11,23 @@
   <link rel="stylesheet" href="../assets/site.css" />
 </head>
 <body>
-  <header class="site-header shell"><nav class="nav" aria-label="Primary navigation"><a class="wordmark" href="../"><span class="wordmark-mark" aria-hidden="true"></span>EarthRunner</a><div class="nav-links"><a class="nav-product" href="../earthguide3d/">EarthGuide3D</a><a href="../support/">Support</a><a href="./" aria-current="page">Privacy Policy</a></div></nav></header>
+  <header class="site-header shell"><nav class="nav" aria-label="Primary navigation"><a class="wordmark" href="../"><span class="wordmark-mark" aria-hidden="true"></span>EarthRunner</a><div class="nav-links"><a class="nav-product" href="../earthguide3d/">EarthGuide3D</a><a href="../support/">Support</a><a href="./" aria-current="page">Privacy Policy</a><a href="../terms/">Terms</a></div></nav></header>
   <main class="shell">
     <section class="prose-hero"><p class="eyebrow">Privacy</p><h1>Privacy Policy</h1><p>How EarthGuide3D handles information when you explore the world.</p></section>
     <article class="prose">
       <section>
-        <p class="notice"><strong>Last updated:</strong> July 18, 2026</p>
+        <p class="notice"><strong>Last updated:</strong> July 21, 2026</p>
         <p>This Privacy Policy applies to EarthGuide3D and the EarthRunner website. EarthGuide3D is an EarthRunner application for Mac. If you have questions about this policy, contact us at <a href="mailto:contact@earthrunner.org">contact@earthrunner.org</a>.</p>
       </section>
       <section>
         <h2>Information We Handle</h2>
         <p>EarthGuide3D is designed to work without creating an EarthRunner account. Depending on the features you use, the app and its local wireless controller may handle the following information:</p>
         <ul>
-          <li><strong>Places and guide requests:</strong> a destination you choose, related place information, and the settings needed to provide an AI guide response.</li>
-          <li><strong>Controller and motion data:</strong> locally transmitted control input and motion-sensor readings used to operate the experience, including Sports Mode. EarthGuide3D does not use this information to identify you.</li>
+          <li><strong>Places and guide requests:</strong> destinations, selected map positions, related place information, search text or voice-search transcripts, and the settings needed to provide a requested AI guide response.</li>
+          <li><strong>Controller and motion data:</strong> locally transmitted control input and motion-sensor readings used to operate the experience, including Sports Mode. These inputs normally remain between your devices on the local network.</li>
+          <li><strong>App and usage identifiers:</strong> a random app-specific identifier, session timestamps and duration, teleport counts, plan balances, and location coordinates associated with usage events. These records support access, quota accounting, restore, security, and troubleshooting; they are not used for advertising.</li>
           <li><strong>Optional settings:</strong> preferences and, if you deliberately choose an advanced bring-your-own-key option, that setting is kept in local app storage on your Mac.</li>
-          <li><strong>Purchase information:</strong> when purchases are available, Apple processes payment. EarthGuide3D may receive transaction information needed to verify an entitlement or restore a purchase; it does not receive your full payment-card information.</li>
+          <li><strong>Purchase information:</strong> when purchases are available, Apple processes payment. EarthGuide3D receives product, transaction, subscription-status, and app-specific account-token information needed to verify entitlements, balances, renewals, refunds, and restores; it does not receive your full payment-card information.</li>
           <li><strong>Support messages:</strong> the information you include when you email us for support.</li>
         </ul>
       </section>
@@ -37,16 +38,19 @@
       </section>
       <section>
         <h2>When Information Leaves Your Device</h2>
-        <p>The wireless controller communicates with EarthGuide3D on your local network. Map imagery, place search, and online guide features require internet access. When you choose to use the AI guide, the selected place and request context may be sent through EarthRunner’s hosted service to generate the guide response and audio. The full local place database is not uploaded for this purpose.</p>
-        <p>Third-party services involved in the experience may include map-data providers, Apple for App Store transactions, and service providers used to deliver hosted AI features. Their use of information is governed by their own privacy terms.</p>
+        <p>The wireless controller communicates with EarthGuide3D over HTTP on your local network. The QR code contains a private pairing credential that grants access to the running controller session. Keep the code out of view of other people, use a trusted private network or personal hotspot, and avoid public or guest Wi-Fi. Close and reopen EarthGuide3D to replace the pairing credential if it may have been exposed.</p>
+        <p>Map imagery, place search, purchase verification, quota accounting, and online guide features require internet access. Selected places, request context, usage records, and purchase-verification data may pass through EarthRunner’s Cloudflare-hosted service. AI guide text and speech requests may then be processed by OpenAI. Map and place features may communicate with Cesium ion, Google Maps Platform, Apple MapKit, Wikipedia, or related data providers. Apple processes App Store purchases and subscription status.</p>
+        <p>If you use voice search, your browser or operating-system speech service may process microphone audio and return a transcript to the controller. EarthGuide3D does not intentionally store the microphone recording. Each service provider handles information under its own privacy terms.</p>
       </section>
       <section>
         <h2>Data Retention and Security</h2>
-        <p>We keep support correspondence only as long as reasonably needed to respond and maintain support records. App settings and local controller data are stored on your device unless a feature needs to send a request to an online service. We use reasonable measures to protect service data, but no online system can be guaranteed completely secure.</p>
+        <p>Local preferences, controller history, and optional advanced settings remain on your Mac unless a requested feature needs an online service. Hosted purchase and usage records are retained as reasonably needed to maintain entitlements and balances, prevent duplicate grants or misuse, troubleshoot the service, satisfy legal obligations, and resolve support requests. Support correspondence is kept only as reasonably needed for those purposes.</p>
+        <p>We use access controls, signed App Store verification, short-lived service sessions, and other reasonable safeguards. Local controller traffic is not encrypted, however, and no local or online system can be guaranteed completely secure.</p>
       </section>
       <section>
         <h2>Your Choices</h2>
-        <p>You can choose not to use online map or AI-guide features, decline microphone permission for voice search, and avoid Sports Mode. You can remove local app settings by deleting the app’s data from your Mac. You can manage or cancel App Store subscriptions through your Apple Account settings.</p>
+        <p>You can choose not to use voice search or Sports Mode, decline microphone permission, remove local app settings and history from your Mac, and manage or cancel subscriptions through your Apple Account settings. Online map access, entitlement verification, and quota accounting are required for the corresponding EarthGuide3D features.</p>
+        <p>To ask about, correct, or request deletion of service information associated with your app installation, email <a href="mailto:contact@earthrunner.org">contact@earthrunner.org</a>. Some purchase records may need to be retained to preserve your entitlement, prevent duplicate grants, or meet legal obligations.</p>
       </section>
       <section>
         <h2>Children</h2>
@@ -61,6 +65,6 @@
       </section>
     </article>
   </main>
-  <footer class="site-footer"><div class="shell footer-row"><p>EarthRunner is an independent project exploring movement, place, and immersive technology.</p><div class="footer-links"><a href="../earthguide3d/">EarthGuide3D</a><a href="../support/">Support</a><a href="./">Privacy Policy</a></div></div></footer>
+  <footer class="site-footer"><div class="shell footer-row"><p>EarthRunner is an independent project exploring movement, place, and immersive technology.</p><div class="footer-links"><a href="../earthguide3d/">EarthGuide3D</a><a href="../support/">Support</a><a href="./">Privacy Policy</a><a href="../terms/">Terms</a></div></div></footer>
 </body>
 </html>
