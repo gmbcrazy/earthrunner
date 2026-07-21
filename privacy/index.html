@@ -25,7 +25,7 @@
         <ul>
           <li><strong>Places and guide requests:</strong> destinations, selected map positions, related place information, search text or voice-search transcripts, and the settings needed to provide a requested AI guide response.</li>
           <li><strong>Controller and motion data:</strong> locally transmitted control input and motion-sensor readings used to operate the experience, including Sports Mode. These inputs normally remain between your devices on the local network.</li>
-          <li><strong>App and usage identifiers:</strong> a random app-specific identifier, session timestamps and duration, teleport counts, plan balances, and location coordinates associated with usage events. These records support access, quota accounting, restore, security, and troubleshooting; they are not used for advertising.</li>
+          <li><strong>App and usage identifiers:</strong> a random app-specific identifier, session timestamps and duration, teleport counts, and plan balances. These records support access, quota accounting, restore, security, and troubleshooting; they are not used for advertising. Exact coordinates, distance, and arbitrary controller metadata are not included in quota-accounting events.</li>
           <li><strong>Optional settings:</strong> preferences and, if you deliberately choose an advanced bring-your-own-key option, that setting is kept in local app storage on your Mac.</li>
           <li><strong>Purchase information:</strong> when purchases are available, Apple processes payment. EarthGuide3D receives product, transaction, subscription-status, and app-specific account-token information needed to verify entitlements, balances, renewals, refunds, and restores; it does not receive your full payment-card information.</li>
           <li><strong>Support messages:</strong> the information you include when you email us for support.</li>
@@ -44,13 +44,13 @@
       </section>
       <section>
         <h2>Data Retention and Security</h2>
-        <p>Local preferences, controller history, and optional advanced settings remain on your Mac unless a requested feature needs an online service. Hosted purchase and usage records are retained as reasonably needed to maintain entitlements and balances, prevent duplicate grants or misuse, troubleshoot the service, satisfy legal obligations, and resolve support requests. Support correspondence is kept only as reasonably needed for those purposes.</p>
+        <p>Local preferences, controller history, and optional advanced settings remain on your Mac unless a requested feature needs an online service. Detailed hosted quota-event and session records are automatically deleted after 30 days. Notice-read history is deleted after 365 days, inactive Journey Drop install history after 90 days, and completed privacy-request audit records after 730 days. App Store transaction and refund records, current entitlements, pass balances, and aggregate quota records are retained only as needed to honor purchases, process refunds, prevent duplicate consumable grants, and meet legal obligations. Support correspondence is kept only as reasonably needed for support and legal purposes.</p>
         <p>We use access controls, signed App Store verification, short-lived service sessions, and other reasonable safeguards. Local controller traffic is not encrypted, however, and no local or online system can be guaranteed completely secure.</p>
       </section>
       <section>
         <h2>Your Choices</h2>
         <p>You can choose not to use voice search or Sports Mode, decline microphone permission, remove local app settings and history from your Mac, and manage or cancel subscriptions through your Apple Account settings. Online map access, entitlement verification, and quota accounting are required for the corresponding EarthGuide3D features.</p>
-        <p>To ask about, correct, or request deletion of service information associated with your app installation, email <a href="mailto:contact@earthrunner.org">contact@earthrunner.org</a>. Some purchase records may need to be retained to preserve your entitlement, prevent duplicate grants, or meet legal obligations.</p>
+        <p>Choose <strong>Delete Service Data</strong> in the EarthGuide3D menu to remove detailed hosted usage events, session history, notice reads, and Journey Drop install history. This does not cancel an App Store subscription. Minimum purchase, refund, entitlement, balance, and aggregate quota records remain where needed to preserve access, prevent duplicate grants, or meet legal obligations. You may also email <a href="mailto:contact@earthrunner.org">contact@earthrunner.org</a> to ask about, correct, or request deletion of service information associated with your app installation.</p>
       </section>
       <section>
         <h2>Children</h2>
