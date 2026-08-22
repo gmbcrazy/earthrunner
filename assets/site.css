@@ -231,7 +231,7 @@ a { color: inherit; text-decoration: none; }
 .notice { padding: 16px 18px; border-left: 2px solid var(--blue); border-radius: 0 12px 12px 0; background: rgba(120,188,247,.08); }
 .safety-notice { border-left-color: #fb7185; background: rgba(251,113,133,.1); }
 .safety-notice strong { color: #fb7185; }
-.network-highlight { color: var(--network); text-shadow: 0 0 16px rgba(246,203,92,.16); }
+.network-highlight { color: var(--network); font-weight: 600; text-shadow: 0 0 16px rgba(246,203,92,.16); }
 
 .support-prose { width: min(100%, 1020px); }
 .support-prose strong { color: var(--text); font-weight: 600; }
