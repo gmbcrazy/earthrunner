@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EarthRunner | Explore the World in Motion</title>
   <meta name="description" content="EarthRunner is an independent immersive running and exploration project. Discover EarthGuide3D for Mac." />
+  <script>if (window.location.protocol === "file:") document.documentElement.classList.add("local-preview");</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,7 +19,10 @@
       <h1>EarthRunner</h1>
       <p class="hero-lede">Run anywhere on Earth from a treadmill.<br /><strong>Interactive navigation through real places.</strong></p>
       <div class="home-demo">
-        <div class="video-frame"><iframe src="https://www.youtube.com/embed/yIUrudPfMCk" title="EarthRunner demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/yIUrudPfMCk" title="EarthRunner demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <a class="video-local-fallback" href="https://youtu.be/yIUrudPfMCk" target="_blank" rel="noopener noreferrer"><span>Watch the EarthRunner demo on YouTube</span><small>Local previews open videos on YouTube.</small></a>
+        </div>
         <div class="music-credit">Music by <a href="https://pixabay.com/users/jeremusic70-25199461/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=223554">Jeremusic70</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=223554">Pixabay</a></div>
       </div>
     </section>
