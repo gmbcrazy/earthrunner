@@ -128,6 +128,9 @@ a { color: inherit; text-decoration: none; }
 .product-visual-note { position: absolute; right: 24px; bottom: 20px; left: 24px; display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; text-align: left; }
 .product-visual-note p { max-width: 420px; margin: 0; color: rgba(255,255,255,.82); font-size: .92rem; line-height: 1.5; }
 .product-visual-note span { color: rgba(255,255,255,.68); font-size: .8rem; white-space: nowrap; }
+.product-visual--screenshot { min-height: 0; background: #05070b; }
+.product-visual--screenshot img { display: block; width: 100%; height: auto; }
+.product-visual--screenshot .product-visual-note { z-index: 1; }
 
 .announcement {
   display: grid;
@@ -167,6 +170,15 @@ a { color: inherit; text-decoration: none; }
 .screen-label { position: absolute; z-index: 1; right: 20px; bottom: 18px; left: 20px; }
 .screen-label strong { display: block; font-size: 1.08rem; }
 .screen-label span { display: block; margin-top: 5px; color: rgba(255,255,255,.74); font-size: .86rem; line-height: 1.45; }
+
+.screenshot-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.screenshot-card { margin: 0; overflow: hidden; border: 1px solid rgba(255,255,255,.11); border-radius: 24px; background: var(--surface); box-shadow: 0 18px 42px rgba(0,0,0,.2); }
+.screenshot-card img { display: block; width: 100%; height: auto; background: #06090f; transition: transform .3s ease; }
+.screenshot-card:hover img { transform: scale(1.015); }
+.screenshot-card figcaption { padding: 17px 20px 19px; border-top: 1px solid rgba(255,255,255,.08); }
+.screenshot-card strong { display: block; font-size: 1.05rem; letter-spacing: -.025em; }
+.screenshot-card span { display: block; margin-top: 5px; color: var(--muted); font-size: .9rem; line-height: 1.5; }
+.screenshot-card--wide { grid-column: 1 / -1; }
 
 .system-panel { display: grid; grid-template-columns: .9fr 1.1fr; overflow: hidden; border: 1px solid var(--line); border-radius: 28px; background: var(--surface); }
 .system-art { position: relative; min-height: 390px; overflow: hidden; background: radial-gradient(circle at 54% 50%, #4f97ca 0 4%, #1d6090 5% 17%, #0e2e4d 18% 30%, transparent 31%), radial-gradient(circle at 54% 50%, transparent 0 25%, rgba(159,215,255,.15) 26% 26.5%, transparent 27% 37%, rgba(159,215,255,.1) 38% 38.5%, transparent 39%), linear-gradient(140deg, #0c1f34, #07101c 58%, #030508); }
@@ -253,6 +265,8 @@ a { color: inherit; text-decoration: none; }
   .product-visual { min-height: 310px; margin-top: 38px; }
   .feature-grid, .screen-grid { grid-template-columns: 1fr; }
   .screen-card { min-height: 240px; }
+  .screenshot-gallery { grid-template-columns: 1fr; }
+  .screenshot-card--wide { grid-column: auto; }
   .system-panel { grid-template-columns: 1fr; }
   .system-art { min-height: 280px; }
   .system-copy { padding: 34px 28px; }
